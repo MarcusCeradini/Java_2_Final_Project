@@ -7,26 +7,22 @@ public class LangtonsAntSwing extends JPanel {
     // Grid size (number of cells, not pixels)
     private static final int WIDTH = 300;
     private static final int HEIGHT = 180;
-
     // Size of each square cell in pixels
     private int cellSize = 5;
-
     // 2D grid: true = white (visited), false = black (unvisited)
     private final boolean[][] grid = new boolean[WIDTH][HEIGHT];
-
     // Ant's current position (starts in center)
     private int x = WIDTH / 2;
     private int y = HEIGHT / 2;
-
     // Direction the ant is facing:
     // 0 = up, 1 = right, 2 = down, 3 = left
     private int dir = 0;
-
     // Timer to repeatedly update the simulation
     private Timer timer;
-
     // Color chosen by the user
     private Color userColor;
+    // Counts how many steps the ant has taken
+    private long steps = 0;
 
     // Opens a color picker dialog and returns the selected color
     public Color getColor() {
@@ -75,6 +71,8 @@ public class LangtonsAntSwing extends JPanel {
         // Wrap around edges (toroidal grid)
         x = (x + WIDTH) % WIDTH;
         y = (y + HEIGHT) % HEIGHT;
+
+        steps++;
     }
 
     // Allows changing simulation speed dynamically
@@ -112,6 +110,11 @@ public class LangtonsAntSwing extends JPanel {
         // Draw the ant as a red circle
         g.setColor(Color.RED);
         g.fillOval(x * cellSize, y * cellSize, cellSize, cellSize);
+
+        // Draw step counter
+        g.setColor(Color.RED);
+        g.setFont(new Font("Arial", Font.BOLD, 16));
+        g.drawString("Steps: " + steps, 10, 20);
     }
 
     // Main method: sets up window and controls
