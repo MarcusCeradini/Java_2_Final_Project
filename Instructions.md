@@ -25,4 +25,4 @@ Move forward
 ## How to run:
 * Open in Java visualizer such as VS code or Intellij
 * Upload the file or copy paste it in
-* Click the run button or enter "javac *.java" then "java AntController"
+* Click the run button or enter "javac *.java" then "java AntController" in the terminal
