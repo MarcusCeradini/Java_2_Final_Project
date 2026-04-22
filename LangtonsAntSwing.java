@@ -5,8 +5,8 @@ import javax.swing.JOptionPane;
 public class LangtonsAntSwing extends JPanel {
 
     // Grid size (number of cells, not pixels)
-    private static final int WIDTH = 300;
-    private static final int HEIGHT = 180;
+    private static final int WIDTH = 288;
+    private static final int HEIGHT = 160;
     // Size of each square cell in pixels
     private int cellSize = 5;
     // 2D grid: true = white (visited), false = black (unvisited)
