@@ -127,7 +127,7 @@ public class LangtonsAntSwing extends JPanel {
         LangtonsAntSwing panel = new LangtonsAntSwing(speed);
 
         // --- SPEED SLIDER ---
-        JSlider speedSlider = new JSlider(1, 1000, speed);
+        JSlider speedSlider = new JSlider(0, 1000, speed);
         speedSlider.setBorder(BorderFactory.createTitledBorder("Speed (ms delay)"));
 
         // When slider changes, update speed
