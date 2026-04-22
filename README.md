@@ -11,6 +11,7 @@ It is a Langton's Ant simulator that's going to be run in ther terminal. As it g
 
 ## Why is it a java 2 project
 It uses recursive to continue, packaging. It's a complex program that would involve critical thinking that comes from doing all the projects we've done in java 2.
+Have to learn java.swing formatting and syntax.
 
 ## MVP
 I want it to run successfully and have a end processing button after activation.
