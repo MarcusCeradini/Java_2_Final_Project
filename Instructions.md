@@ -23,6 +23,7 @@ Move forward
 * A way to run Java (Java visualizer)
 
 ## How to run:
+* Download or clone the repository
 * Open in Java visualizer such as VS code or Intellij
 * Upload the file or copy paste it in
 * Click the run button or enter "javac *.java" then "java AntController" in the terminal
